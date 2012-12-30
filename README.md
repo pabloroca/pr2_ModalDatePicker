@@ -3,7 +3,7 @@
 
 A modal UIDatePicker with a semi transparent background. The goal was to keep as simple as possible.
 
-![pr2_ModalDatePicker](http://img84.imageshack.us/img84/262/pr2modaldatepicker.png)
+![pr2_ModalDatePicker](https://raw.github.com/pabloroca/pr2_ModalDatePicker/master/screenshoot.png)
 
 
 ## Installation
