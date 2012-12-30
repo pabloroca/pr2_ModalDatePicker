@@ -18,6 +18,8 @@ Import pr2_ModalDatePicker.h and call presentModalwithDate with the date to be t
 
 ```objective-c
 #import <pr2_ModalDatePicker.h>
+@interface myViewController : UIViewController <pr2_ModalDatePickerDelegate>
+
 ...
 pr2_ModalDatePicker *datePicker = [[pr2_ModalDatePicker alloc] initWithNibName:@"pr2_ModalDatePicker" bundle:nil];
 	
@@ -27,14 +29,35 @@ NSDate *tdate = [NSDate date];
 [datePicker presentModalwithDate:tdate];
 ```
 
+And set the delegate callbacks
+
+
+```objective-c
+-(void)pr2datePickerCancel;
+{
+}
+
+-(void)pr2datePickerClear;
+{
+	self.lbldate.text = @"";
+	self.mydate = nil;
+}
+
+-(void)pr2datePickerSave:(NSDate *)tdate;
+{
+	self.lbldate.text = [self.dateFormatter stringFromDate:tdate];
+	self.mydate = tdate;
+}
+```
+
 ## Who use it
 
-Find out [who use pr2_ModalDatePicker](https://github.com/rs/pr2_ModalDatePicker/wiki/Who-Use-pr2_ModalDatePicker) and add your app to the list.
+Find out [who use pr2_ModalDatePicker](https://github.com/pabloroca/pr2_ModalDatePicker/wiki/Who-Use-pr2_ModalDatePicker) and add your app to the list.
 
 ## Licenses
 
-All source code is licensed under the [MIT License](https://raw.github.com/rs/pr2_ModalDatePicker/master/LICENSE).
+All source code is licensed under the MIT License.
 
 ## Credits
 
-pr2_ModalDatePicker is brought to you by [Pablo Roca Rozas & PR2Studio](http://www.pr2studio.com) and [contributors to the project]https://github.com/pabloroca/pr2_ModalDatePicker/contributors). If you have feature suggestions or bug reports, feel free to help out by sending pull requests or by [creating new issues](https://github.com/pabloroca/pr2_ModalDatePicker/issues/new). If you're using pr2_ModalDatePicker in your project, attribution would be nice.
+pr2_ModalDatePicker is brought to you by [Pablo Roca Rozas & PR2Studio](http://www.pr2studio.com) and [contributors to the project](https://github.com/pabloroca/pr2_ModalDatePicker/contributors). If you have feature suggestions or bug reports, feel free to help out by sending pull requests or by [creating new issues](https://github.com/pabloroca/pr2_ModalDatePicker/issues/new). If you're using pr2_ModalDatePicker in your project, attribution would be nice.
