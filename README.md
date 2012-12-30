@@ -12,15 +12,16 @@ _**If your project doesn't use ARC**: you must add the `-fobjc-arc` compiler fla
 
 ## Usage
 
-(see sample Xcode project in /Examples)
+(see sample Xcode project in /Example)
 
-Import pr2_ModalDatePicker.h and call presentModalwithDate with the date to be the default for the UIDatePicker
+Import pr2_ModalDatePicker.h, set the delegate call presentModalwithDate with the date to be the default for the UIDatePicker and finally use the callback delegates
 
 ```objective-c
 #import <pr2_ModalDatePicker.h>
 @interface myViewController : UIViewController <pr2_ModalDatePickerDelegate>
 
 ...
+
 pr2_ModalDatePicker *datePicker = [[pr2_ModalDatePicker alloc] initWithNibName:@"pr2_ModalDatePicker" bundle:nil];
 	
 datePicker.delegate = self;
