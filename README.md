@@ -33,17 +33,17 @@ And set the delegate callbacks
 
 
 ```objective-c
--(void)pr2datePickerCancel;
+-(void)pr2datePickerCancel
 {
 }
 
--(void)pr2datePickerClear;
+-(void)pr2datePickerClear
 {
 	self.lbldate.text = @"";
 	self.mydate = nil;
 }
 
--(void)pr2datePickerSave:(NSDate *)tdate;
+-(void)pr2datePickerSave:(NSDate *)tdate
 {
 	self.lbldate.text = [self.dateFormatter stringFromDate:tdate];
 	self.mydate = tdate;
