@@ -16,7 +16,7 @@ _**If your project doesn't use ARC**: you must add the `-fobjc-arc` compiler fla
 
 (see sample Xcode project in /Example)
 
-Import pr2_ModalDatePicker.h, set the delegate call presentModalwithDate with the date to be the default for the UIDatePicker and finally use the callback delegates
+Import pr2_ModalDatePicker.h, set the delegate, call presentModalwithDate with the date to be the default for the UIDatePicker and finally use the callback delegates
 
 ```objective-c
 #import <pr2_ModalDatePicker.h>
@@ -63,4 +63,4 @@ All source code is licensed under the MIT License.
 
 ## Credits
 
-pr2_ModalDatePicker is brought to you by [Pablo Roca Rozas & PR2Studio](http://www.pr2studio.com) and [contributors to the project](https://github.com/pabloroca/pr2_ModalDatePicker/contributors). If you have feature suggestions or bug reports, feel free to help out by sending pull requests or by [creating new issues](https://github.com/pabloroca/pr2_ModalDatePicker/issues/new). If you're using pr2_ModalDatePicker in your project, attribution would be nice.
+pr2_ModalDatePicker is brought to you by [Pablo Roca Rozas & PR2Studio](http://www.pr2studio.com) and [contributors to the project](https://github.com/pabloroca/pr2_ModalDatePicker/contributors). If you have feature suggestions or bug reports, feel free to help out by sending pull requests or by [creating new issues](https://github.com/pabloroca/pr2_ModalDatePicker/issues/new). If you're using pr2_ModalDatePicker in your project, attribution would be nice or drop me an email saying hello.
